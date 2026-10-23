@@ -14,6 +14,6 @@ alias pbcopy='wl-copy'
 alias pbpaste='wl-paste'
 
 # Python venv
-source ~/.venv/bin/activate
+source "$HOME/.venv/bin/activate"
 
 export PATH="/home/nagasai/.local/bin:$PATH"
