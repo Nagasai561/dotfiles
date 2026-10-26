@@ -19,6 +19,7 @@ vim.keymap.set("n", "g[", vim.diagnostic.goto_prev, { desc = "Previous diagnosti
 vim.lsp.enable('pyright')
 vim.lsp.enable('clangd')
 vim.lsp.enable('bashls')
+vim.lsp.enable('jsonls')
 
 vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(args)
