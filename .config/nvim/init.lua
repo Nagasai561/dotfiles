@@ -3,6 +3,7 @@ vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 vim.opt.number = true
 vim.opt.completeopt = { "fuzzy", "noinsert", "popup", "menuone" }
+vim.opt.signcolumn = "yes"
 vim.cmd.colorscheme("catppuccin")
 
 vim.pack.add{
@@ -36,3 +37,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	vim.keymap.set("n", "g.", vim.lsp.buf.code_action, { desc = "Code action" })
   end,
 })
+
+-- Plugin specific
+require("nvim-treesitter").install({"c", "python"}) -- needs tree-sitter-cli
